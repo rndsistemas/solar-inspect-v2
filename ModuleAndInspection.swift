@@ -30,7 +30,11 @@ struct InspectionView:View {
     @EnvironmentObject var data:SolarData
     @Environment(\.dismiss) var dismiss
     let module:PVModule
-    @State private var type="Visual", defect="Sem defeito", severity="Normal", inspector="",notes=""
+    @State private var type="Visual"
+    @State private var defect="Sem defeito"
+    @State private var severity="Normal"
+    @State private var inspector=""
+    @State private var notes=""
     @State private var photo:PhotosPickerItem?
     let defects=["Sem defeito","Módulo quebrado","Vidro trincado","Microtrinca","Hotspot","Delaminação","Sujidade","Cabo danificado","Conector danificado","Baixa geração","Outro"]
     var body:some View {
