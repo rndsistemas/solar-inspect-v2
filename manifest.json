@@ -1,0 +1,13 @@
+{
+  "name": "SOLAR INSPECT",
+  "short_name": "SOLAR INSPECT",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0e0e0e",
+  "theme_color": "#111111",
+  "description": "Aplicativo de inspeção e manutenção de módulos fotovoltaicos.",
+  "icons": [
+    {"src":"icon-192.png","sizes":"192x192","type":"image/png"},
+    {"src":"icon-512.png","sizes":"512x512","type":"image/png"}
+  ]
+}
