@@ -78,7 +78,9 @@ struct SyncView:View {
     }.navigationTitle("Nuvem e API") }
 }
 struct NotificationsView:View {
-    @State private var critical=true,os=true,due=true
+    @State private var critical=true
+    @State private var os=true
+    @State private var due=true
     var body:some View { Form{
         Toggle("Falhas críticas",isOn:$critical);Toggle("Novas ordens de serviço",isOn:$os);Toggle("Prazos de manutenção",isOn:$due)
     }.navigationTitle("Notificações") }
